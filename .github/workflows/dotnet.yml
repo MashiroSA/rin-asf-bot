@@ -27,7 +27,7 @@ jobs:
     - name: Build
       run: dotnet build ./rin-asf-bot/rin-asf-bot/ArchiSteamFarm.CustomPlugins.Rin.csproj --no-restore --configuration Release
     - name: Upload ASF DLL artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ArchiSteamFarm.CustomPlugins.RinBot
         path: ./rin-asf-bot/rin-asf-bot/bin/Release/net8.0/ArchiSteamFarm.CustomPlugins.Rin.dll
